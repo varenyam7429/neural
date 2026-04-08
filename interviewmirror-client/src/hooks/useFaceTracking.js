@@ -36,6 +36,7 @@ export default function useFaceTracking(videoRef) {
 
       interval = setInterval(() => {
         if (!videoRef.current || !faceLandmarkerRef.current) return;
+        if (videoRef.current.readyState < 2 || videoRef.current.videoWidth === 0 || videoRef.current.videoHeight === 0) return;
 
         const result = faceLandmarkerRef.current.detectForVideo(
           videoRef.current,
