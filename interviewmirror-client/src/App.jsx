@@ -25,6 +25,8 @@ const roleOptions = ["Software Engineer", "Product Manager", "Data Analyst", "HR
 const difficultyOptions = ["Easy", "Medium", "Hard"];
 const roundOptions = [1, 2, 3, 4, 5];
 
+// import ExecutionBoard from "./components/ExecutionBoard";
+
 export default function App() {
   return (
     <div className="min-h-screen bg-[#060816] text-white overflow-x-hidden relative font-['Inter']">

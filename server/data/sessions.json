@@ -1,0 +1,898 @@
+{
+  "sessions": [
+    {
+      "id": "RCW5AlpF0P",
+      "createdAt": "2026-04-10T04:08:13.337Z",
+      "role": "software-engineer",
+      "candidateName": "Candidate",
+      "interviewMode": "Technical",
+      "difficulty": "medium",
+      "maxRounds": 3,
+      "persona": "calm-senior-interviewer",
+      "pressureMode": "balanced",
+      "resumeText": "",
+      "jdText": "",
+      "askedQuestionIds": [
+        "SWE002",
+        "SWE004"
+      ],
+      "currentQuestion": {
+        "id": "SWE004",
+        "role": "software-engineer",
+        "category": "Software Engineer",
+        "difficulty": "medium",
+        "question": "How do you ensure your code remains maintainable and scalable as a team grows?",
+        "keywords": [
+          "technical leadership",
+          "scalability thinking",
+          "team awareness"
+        ],
+        "ideal_answer_framework": "Standards + Documentation + Review Culture + Proactive Debt Management",
+        "expectedPoints": [
+          "Too surface-level",
+          "Not team-scale",
+          "No systematic approach"
+        ],
+        "strong_answer": "I enforce patterns at three levels: (1) PR reviews focused on naming, single-responsibility, and test coverage; (2) architectural decision records (ADRs) for patterns above function-level; (3) onboarding docs with conventions guides. I also flag complexity debt proactively in tickets rather than letting it compound."
+      },
+      "transcript": [
+        {
+          "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+          "questionMeta": {
+            "id": "SWE002",
+            "role": "software-engineer",
+            "category": "Software Engineer",
+            "difficulty": "medium",
+            "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+            "keywords": [
+              "technical depth",
+              "ownership",
+              "communication"
+            ],
+            "ideal_answer_framework": "Tradeoff Name + Why That Direction + What Was Given Up + Mitigation Plan",
+            "expectedPoints": [
+              "Too vague",
+              "No category of tradeoff named",
+              "Missing justification"
+            ],
+            "strong_answer": "We needed a reporting feature by end-of-sprint. I chose a synchronous approach instead of async queuing — sacrificing long-term scalability for delivery speed. I created a follow-up ticket to migrate to an async queue post-launch and communicated the tradeoff to the team so everyone understood the technical debt we were taking on."
+          },
+          "answer": "ygyj",
+          "createdAt": "2026-04-10T04:09:05.794Z",
+          "analysis": {
+            "responseSeconds": 52
+          },
+          "responseSeconds": 52,
+          "pressureScoreBefore": 48
+        }
+      ],
+      "pressureScore": 56,
+      "interviewer": {
+        "name": "Ananya Rao",
+        "title": "Senior Interviewer",
+        "style": "Calm, deliberate, and detail-oriented.",
+        "pressureMultiplier": 1,
+        "intro": "Welcome. I will evaluate clarity, structure, and evidence. Take a breath, and answer with specifics."
+      },
+      "endedAt": "2026-04-10T04:09:11.193Z",
+      "summary": {}
+    },
+    {
+      "id": "wdf6TLJLoh",
+      "createdAt": "2026-04-09T06:19:33.782Z",
+      "role": "software-engineer",
+      "candidateName": "Candidate",
+      "interviewMode": "behavioral + technical",
+      "difficulty": "medium",
+      "persona": "calm-senior-interviewer",
+      "pressureMode": "balanced",
+      "resumeText": "",
+      "jdText": "",
+      "askedQuestionIds": [
+        "SWE002"
+      ],
+      "currentQuestion": {
+        "id": "SWE002",
+        "role": "software-engineer",
+        "category": "Software Engineer",
+        "difficulty": "medium",
+        "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+        "keywords": [
+          "technical depth",
+          "ownership",
+          "communication"
+        ],
+        "ideal_answer_framework": "Tradeoff Name + Why That Direction + What Was Given Up + Mitigation Plan",
+        "expectedPoints": [
+          "Too vague",
+          "No category of tradeoff named",
+          "Missing justification"
+        ],
+        "strong_answer": "We needed a reporting feature by end-of-sprint. I chose a synchronous approach instead of async queuing — sacrificing long-term scalability for delivery speed. I created a follow-up ticket to migrate to an async queue post-launch and communicated the tradeoff to the team so everyone understood the technical debt we were taking on."
+      },
+      "transcript": [],
+      "pressureScore": 48,
+      "interviewer": {
+        "name": "Ananya Rao",
+        "title": "Senior Interviewer",
+        "style": "Calm, deliberate, and detail-oriented.",
+        "pressureMultiplier": 1,
+        "intro": "Welcome. I will evaluate clarity, structure, and evidence. Take a breath, and answer with specifics."
+      },
+      "endedAt": null,
+      "summary": null
+    },
+    {
+      "id": "M6y3KukfCZ",
+      "createdAt": "2026-04-09T06:10:54.526Z",
+      "role": "software-engineer",
+      "candidateName": "Candidate",
+      "interviewMode": "behavioral + technical",
+      "difficulty": "medium",
+      "persona": "calm-senior-interviewer",
+      "pressureMode": "balanced",
+      "resumeText": "",
+      "jdText": "",
+      "askedQuestionIds": [
+        "SWE002",
+        "SWE004",
+        "SWE006"
+      ],
+      "currentQuestion": {
+        "id": "SWE006",
+        "role": "software-engineer",
+        "category": "Software Engineer",
+        "difficulty": "medium",
+        "question": "How do you decide when to build a feature from scratch versus using a third-party library?",
+        "keywords": [
+          "judgment",
+          "risk thinking",
+          "pragmatism"
+        ],
+        "ideal_answer_framework": "Evaluation Criteria + Domain Risk + Decision + Example",
+        "expectedPoints": [
+          "Too casual",
+          "No framework given",
+          "Missing risk analysis"
+        ],
+        "strong_answer": "I evaluate on four axes: maintenance burden, security risk, customization needs, and licensing constraints. If a library covers 90%+ of what we need, has active maintenance, and doesn't introduce a critical dependency risk — I use it. If it's in a trust-critical area like auth or payments, I default to well-audited libraries. If the need is highly specific, I build."
+      },
+      "transcript": [
+        {
+          "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+          "questionMeta": {
+            "id": "SWE002",
+            "role": "software-engineer",
+            "category": "Software Engineer",
+            "difficulty": "medium",
+            "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+            "keywords": [
+              "technical depth",
+              "ownership",
+              "communication"
+            ],
+            "ideal_answer_framework": "Tradeoff Name + Why That Direction + What Was Given Up + Mitigation Plan",
+            "expectedPoints": [
+              "Too vague",
+              "No category of tradeoff named",
+              "Missing justification"
+            ],
+            "strong_answer": "We needed a reporting feature by end-of-sprint. I chose a synchronous approach instead of async queuing — sacrificing long-term scalability for delivery speed. I created a follow-up ticket to migrate to an async queue post-launch and communicated the tradeoff to the team so everyone understood the technical debt we were taking on."
+          },
+          "answer": "Over </S>Hello",
+          "createdAt": "2026-04-09T06:11:21.767Z",
+          "analysis": {
+            "responseSeconds": 26
+          },
+          "responseSeconds": 26,
+          "pressureScoreBefore": 48
+        },
+        {
+          "question": "How do you ensure your code remains maintainable and scalable as a team grows?",
+          "questionMeta": {
+            "id": "SWE004",
+            "role": "software-engineer",
+            "category": "Software Engineer",
+            "difficulty": "medium",
+            "question": "How do you ensure your code remains maintainable and scalable as a team grows?",
+            "keywords": [
+              "technical leadership",
+              "scalability thinking",
+              "team awareness"
+            ],
+            "ideal_answer_framework": "Standards + Documentation + Review Culture + Proactive Debt Management",
+            "expectedPoints": [
+              "Too surface-level",
+              "Not team-scale",
+              "No systematic approach"
+            ],
+            "strong_answer": "I enforce patterns at three levels: (1) PR reviews focused on naming, single-responsibility, and test coverage; (2) architectural decision records (ADRs) for patterns above function-level; (3) onboarding docs with conventions guides. I also flag complexity debt proactively in tickets rather than letting it compound."
+          },
+          "answer": "Over </S>HelloHello",
+          "createdAt": "2026-04-09T06:11:28.176Z",
+          "analysis": {
+            "responseSeconds": 32
+          },
+          "responseSeconds": 32,
+          "pressureScoreBefore": 56
+        }
+      ],
+      "pressureScore": 64,
+      "interviewer": {
+        "name": "Ananya Rao",
+        "title": "Senior Interviewer",
+        "style": "Calm, deliberate, and detail-oriented.",
+        "pressureMultiplier": 1,
+        "intro": "Welcome. I will evaluate clarity, structure, and evidence. Take a breath, and answer with specifics."
+      },
+      "endedAt": "2026-04-09T06:11:29.353Z",
+      "summary": {}
+    },
+    {
+      "id": "nQVlB_PMnc",
+      "createdAt": "2026-04-09T06:06:32.745Z",
+      "role": "software-engineer",
+      "candidateName": "Candidate",
+      "interviewMode": "behavioral + technical",
+      "difficulty": "medium",
+      "persona": "calm-senior-interviewer",
+      "pressureMode": "balanced",
+      "resumeText": "",
+      "jdText": "",
+      "askedQuestionIds": [
+        "SWE002",
+        "SWE004"
+      ],
+      "currentQuestion": {
+        "id": "SWE004",
+        "role": "software-engineer",
+        "category": "Software Engineer",
+        "difficulty": "medium",
+        "question": "How do you ensure your code remains maintainable and scalable as a team grows?",
+        "keywords": [
+          "technical leadership",
+          "scalability thinking",
+          "team awareness"
+        ],
+        "ideal_answer_framework": "Standards + Documentation + Review Culture + Proactive Debt Management",
+        "expectedPoints": [
+          "Too surface-level",
+          "Not team-scale",
+          "No systematic approach"
+        ],
+        "strong_answer": "I enforce patterns at three levels: (1) PR reviews focused on naming, single-responsibility, and test coverage; (2) architectural decision records (ADRs) for patterns above function-level; (3) onboarding docs with conventions guides. I also flag complexity debt proactively in tickets rather than letting it compound."
+      },
+      "transcript": [
+        {
+          "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+          "questionMeta": {
+            "id": "SWE002",
+            "role": "software-engineer",
+            "category": "Software Engineer",
+            "difficulty": "medium",
+            "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+            "keywords": [
+              "technical depth",
+              "ownership",
+              "communication"
+            ],
+            "ideal_answer_framework": "Tradeoff Name + Why That Direction + What Was Given Up + Mitigation Plan",
+            "expectedPoints": [
+              "Too vague",
+              "No category of tradeoff named",
+              "Missing justification"
+            ],
+            "strong_answer": "We needed a reporting feature by end-of-sprint. I chose a synchronous approach instead of async queuing — sacrificing long-term scalability for delivery speed. I created a follow-up ticket to migrate to an async queue post-launch and communicated the tradeoff to the team so everyone understood the technical debt we were taking on."
+          },
+          "answer": "Hello I want to fuck you fuck youAbout meIf you like to hear something something",
+          "createdAt": "2026-04-09T06:07:28.000Z",
+          "analysis": {
+            "responseSeconds": 54
+          },
+          "responseSeconds": 54,
+          "pressureScoreBefore": 48
+        }
+      ],
+      "pressureScore": 56,
+      "interviewer": {
+        "name": "Ananya Rao",
+        "title": "Senior Interviewer",
+        "style": "Calm, deliberate, and detail-oriented.",
+        "pressureMultiplier": 1,
+        "intro": "Welcome. I will evaluate clarity, structure, and evidence. Take a breath, and answer with specifics."
+      },
+      "endedAt": null,
+      "summary": null
+    },
+    {
+      "id": "-hA10UhOyb",
+      "createdAt": "2026-04-09T05:27:51.262Z",
+      "role": "software-engineer",
+      "candidateName": "Candidate",
+      "interviewMode": "behavioral + technical",
+      "difficulty": "medium",
+      "persona": "calm-senior-interviewer",
+      "pressureMode": "balanced",
+      "resumeText": "",
+      "jdText": "",
+      "askedQuestionIds": [
+        "SWE002"
+      ],
+      "currentQuestion": {
+        "id": "SWE002",
+        "role": "software-engineer",
+        "category": "Software Engineer",
+        "difficulty": "medium",
+        "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+        "keywords": [
+          "technical depth",
+          "ownership",
+          "communication"
+        ],
+        "ideal_answer_framework": "Tradeoff Name + Why That Direction + What Was Given Up + Mitigation Plan",
+        "expectedPoints": [
+          "Too vague",
+          "No category of tradeoff named",
+          "Missing justification"
+        ],
+        "strong_answer": "We needed a reporting feature by end-of-sprint. I chose a synchronous approach instead of async queuing — sacrificing long-term scalability for delivery speed. I created a follow-up ticket to migrate to an async queue post-launch and communicated the tradeoff to the team so everyone understood the technical debt we were taking on."
+      },
+      "transcript": [],
+      "pressureScore": 48,
+      "interviewer": {
+        "name": "Ananya Rao",
+        "title": "Senior Interviewer",
+        "style": "Calm, deliberate, and detail-oriented.",
+        "pressureMultiplier": 1,
+        "intro": "Welcome. I will evaluate clarity, structure, and evidence. Take a breath, and answer with specifics."
+      },
+      "endedAt": null,
+      "summary": null
+    },
+    {
+      "id": "fRNxLMbhu1",
+      "createdAt": "2026-04-09T05:26:07.097Z",
+      "role": "software-engineer",
+      "candidateName": "Candidate",
+      "interviewMode": "behavioral + technical",
+      "difficulty": "medium",
+      "persona": "friendly-recruiter",
+      "pressureMode": "balanced",
+      "resumeText": "",
+      "jdText": "",
+      "askedQuestionIds": [
+        "SWE002",
+        "SWE004"
+      ],
+      "currentQuestion": {
+        "id": "SWE004",
+        "role": "software-engineer",
+        "category": "Software Engineer",
+        "difficulty": "medium",
+        "question": "How do you ensure your code remains maintainable and scalable as a team grows?",
+        "keywords": [
+          "technical leadership",
+          "scalability thinking",
+          "team awareness"
+        ],
+        "ideal_answer_framework": "Standards + Documentation + Review Culture + Proactive Debt Management",
+        "expectedPoints": [
+          "Too surface-level",
+          "Not team-scale",
+          "No systematic approach"
+        ],
+        "strong_answer": "I enforce patterns at three levels: (1) PR reviews focused on naming, single-responsibility, and test coverage; (2) architectural decision records (ADRs) for patterns above function-level; (3) onboarding docs with conventions guides. I also flag complexity debt proactively in tickets rather than letting it compound."
+      },
+      "transcript": [
+        {
+          "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+          "questionMeta": {
+            "id": "SWE002",
+            "role": "software-engineer",
+            "category": "Software Engineer",
+            "difficulty": "medium",
+            "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+            "keywords": [
+              "technical depth",
+              "ownership",
+              "communication"
+            ],
+            "ideal_answer_framework": "Tradeoff Name + Why That Direction + What Was Given Up + Mitigation Plan",
+            "expectedPoints": [
+              "Too vague",
+              "No category of tradeoff named",
+              "Missing justification"
+            ],
+            "strong_answer": "We needed a reporting feature by end-of-sprint. I chose a synchronous approach instead of async queuing — sacrificing long-term scalability for delivery speed. I created a follow-up ticket to migrate to an async queue post-launch and communicated the tradeoff to the team so everyone understood the technical debt we were taking on."
+          },
+          "answer": "I started with capturing the essence of the things and doing work upon it",
+          "createdAt": "2026-04-09T05:26:29.133Z",
+          "analysis": {
+            "responseSeconds": 22
+          },
+          "responseSeconds": 22,
+          "pressureScoreBefore": 48
+        }
+      ],
+      "pressureScore": 56,
+      "interviewer": {
+        "name": "Maya Singh",
+        "title": "Talent Partner",
+        "style": "Warm, encouraging, but still precise.",
+        "pressureMultiplier": 0.8,
+        "intro": "Hi there. I want you to do well, but I will still push for clear and specific answers."
+      },
+      "endedAt": "2026-04-09T05:27:43.762Z",
+      "summary": {}
+    },
+    {
+      "id": "CIDkckI8yK",
+      "createdAt": "2026-04-09T05:25:32.404Z",
+      "role": "software-engineer",
+      "candidateName": "Candidate",
+      "interviewMode": "behavioral + technical",
+      "difficulty": "medium",
+      "persona": "calm-senior-interviewer",
+      "pressureMode": "balanced",
+      "resumeText": "",
+      "jdText": "",
+      "askedQuestionIds": [
+        "SWE002",
+        "SWE004"
+      ],
+      "currentQuestion": {
+        "id": "SWE004",
+        "role": "software-engineer",
+        "category": "Software Engineer",
+        "difficulty": "medium",
+        "question": "How do you ensure your code remains maintainable and scalable as a team grows?",
+        "keywords": [
+          "technical leadership",
+          "scalability thinking",
+          "team awareness"
+        ],
+        "ideal_answer_framework": "Standards + Documentation + Review Culture + Proactive Debt Management",
+        "expectedPoints": [
+          "Too surface-level",
+          "Not team-scale",
+          "No systematic approach"
+        ],
+        "strong_answer": "I enforce patterns at three levels: (1) PR reviews focused on naming, single-responsibility, and test coverage; (2) architectural decision records (ADRs) for patterns above function-level; (3) onboarding docs with conventions guides. I also flag complexity debt proactively in tickets rather than letting it compound."
+      },
+      "transcript": [
+        {
+          "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+          "questionMeta": {
+            "id": "SWE002",
+            "role": "software-engineer",
+            "category": "Software Engineer",
+            "difficulty": "medium",
+            "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+            "keywords": [
+              "technical depth",
+              "ownership",
+              "communication"
+            ],
+            "ideal_answer_framework": "Tradeoff Name + Why That Direction + What Was Given Up + Mitigation Plan",
+            "expectedPoints": [
+              "Too vague",
+              "No category of tradeoff named",
+              "Missing justification"
+            ],
+            "strong_answer": "We needed a reporting feature by end-of-sprint. I chose a synchronous approach instead of async queuing — sacrificing long-term scalability for delivery speed. I created a follow-up ticket to migrate to an async queue post-launch and communicated the tradeoff to the team so everyone understood the technical debt we were taking on."
+          },
+          "answer": "Do you know the",
+          "createdAt": "2026-04-09T05:25:57.026Z",
+          "analysis": {
+            "responseSeconds": 24
+          },
+          "responseSeconds": 24,
+          "pressureScoreBefore": 48
+        }
+      ],
+      "pressureScore": 56,
+      "interviewer": {
+        "name": "Ananya Rao",
+        "title": "Senior Interviewer",
+        "style": "Calm, deliberate, and detail-oriented.",
+        "pressureMultiplier": 1,
+        "intro": "Welcome. I will evaluate clarity, structure, and evidence. Take a breath, and answer with specifics."
+      },
+      "endedAt": "2026-04-09T05:26:00.238Z",
+      "summary": {}
+    },
+    {
+      "id": "Te7mSRosEA",
+      "createdAt": "2026-04-09T05:12:49.510Z",
+      "role": "software-engineer",
+      "candidateName": "Candidate",
+      "interviewMode": "behavioral + technical",
+      "difficulty": "medium",
+      "persona": "calm-senior-interviewer",
+      "pressureMode": "balanced",
+      "resumeText": "",
+      "jdText": "",
+      "askedQuestionIds": [
+        "SWE002",
+        "SWE004"
+      ],
+      "currentQuestion": {
+        "id": "SWE004",
+        "role": "software-engineer",
+        "category": "Software Engineer",
+        "difficulty": "medium",
+        "question": "How do you ensure your code remains maintainable and scalable as a team grows?",
+        "keywords": [
+          "technical leadership",
+          "scalability thinking",
+          "team awareness"
+        ],
+        "ideal_answer_framework": "Standards + Documentation + Review Culture + Proactive Debt Management",
+        "expectedPoints": [
+          "Too surface-level",
+          "Not team-scale",
+          "No systematic approach"
+        ],
+        "strong_answer": "I enforce patterns at three levels: (1) PR reviews focused on naming, single-responsibility, and test coverage; (2) architectural decision records (ADRs) for patterns above function-level; (3) onboarding docs with conventions guides. I also flag complexity debt proactively in tickets rather than letting it compound."
+      },
+      "transcript": [
+        {
+          "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+          "questionMeta": {
+            "id": "SWE002",
+            "role": "software-engineer",
+            "category": "Software Engineer",
+            "difficulty": "medium",
+            "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+            "keywords": [
+              "technical depth",
+              "ownership",
+              "communication"
+            ],
+            "ideal_answer_framework": "Tradeoff Name + Why That Direction + What Was Given Up + Mitigation Plan",
+            "expectedPoints": [
+              "Too vague",
+              "No category of tradeoff named",
+              "Missing justification"
+            ],
+            "strong_answer": "We needed a reporting feature by end-of-sprint. I chose a synchronous approach instead of async queuing — sacrificing long-term scalability for delivery speed. I created a follow-up ticket to migrate to an async queue post-launch and communicated the tradeoff to the team so everyone understood the technical debt we were taking on."
+          },
+          "answer": "Hello </S>You know the thing isEnglish wordStopMotherfuckerVanessa",
+          "createdAt": "2026-04-09T05:15:31.781Z",
+          "analysis": {
+            "responseSeconds": 162
+          },
+          "responseSeconds": 162,
+          "pressureScoreBefore": 48
+        }
+      ],
+      "pressureScore": 56,
+      "interviewer": {
+        "name": "Ananya Rao",
+        "title": "Senior Interviewer",
+        "style": "Calm, deliberate, and detail-oriented.",
+        "pressureMultiplier": 1,
+        "intro": "Welcome. I will evaluate clarity, structure, and evidence. Take a breath, and answer with specifics."
+      },
+      "endedAt": "2026-04-09T05:15:33.049Z",
+      "summary": {}
+    },
+    {
+      "id": "zgLmB2bhVT",
+      "createdAt": "2026-04-09T05:12:41.649Z",
+      "role": "software-engineer",
+      "candidateName": "Candidate",
+      "interviewMode": "behavioral + technical",
+      "difficulty": "easy",
+      "persona": "calm-senior-interviewer",
+      "pressureMode": "balanced",
+      "resumeText": "",
+      "jdText": "",
+      "askedQuestionIds": [
+        "SWE001"
+      ],
+      "currentQuestion": {
+        "id": "SWE001",
+        "role": "software-engineer",
+        "category": "Software Engineer",
+        "difficulty": "hard",
+        "question": "Tell me about a time you had to make a difficult architectural decision under pressure.",
+        "keywords": [
+          "technical judgment",
+          "pressure handling",
+          "communication"
+        ],
+        "ideal_answer_framework": "Context + Options Considered + Decision Criteria + Outcome + Lesson",
+        "expectedPoints": [
+          "Generic choice",
+          "No pressure context",
+          "Missing tradeoff reasoning"
+        ],
+        "strong_answer": "During a product launch with a hard deadline, we discovered our existing monolith couldn't handle projected load. I had to decide quickly between a partial extraction vs. a caching layer. I mapped the highest-traffic endpoints, ran load tests, and chose to introduce Redis caching first — which gave us 4x throughput without a risky refactor. I documented the tradeoff clearly for the team."
+      },
+      "transcript": [],
+      "pressureScore": 48,
+      "interviewer": {
+        "name": "Ananya Rao",
+        "title": "Senior Interviewer",
+        "style": "Calm, deliberate, and detail-oriented.",
+        "pressureMultiplier": 1,
+        "intro": "Welcome. I will evaluate clarity, structure, and evidence. Take a breath, and answer with specifics."
+      },
+      "endedAt": null,
+      "summary": null
+    },
+    {
+      "id": "MCX7Coisrr",
+      "createdAt": "2026-04-09T05:02:03.182Z",
+      "role": "software-engineer",
+      "candidateName": "Candidate",
+      "interviewMode": "behavioral + technical",
+      "difficulty": "easy",
+      "persona": "calm-senior-interviewer",
+      "pressureMode": "balanced",
+      "resumeText": "",
+      "jdText": "",
+      "askedQuestionIds": [
+        "SWE001"
+      ],
+      "currentQuestion": {
+        "id": "SWE001",
+        "role": "software-engineer",
+        "category": "Software Engineer",
+        "difficulty": "hard",
+        "question": "Tell me about a time you had to make a difficult architectural decision under pressure.",
+        "keywords": [
+          "technical judgment",
+          "pressure handling",
+          "communication"
+        ],
+        "ideal_answer_framework": "Context + Options Considered + Decision Criteria + Outcome + Lesson",
+        "expectedPoints": [
+          "Generic choice",
+          "No pressure context",
+          "Missing tradeoff reasoning"
+        ],
+        "strong_answer": "During a product launch with a hard deadline, we discovered our existing monolith couldn't handle projected load. I had to decide quickly between a partial extraction vs. a caching layer. I mapped the highest-traffic endpoints, ran load tests, and chose to introduce Redis caching first — which gave us 4x throughput without a risky refactor. I documented the tradeoff clearly for the team."
+      },
+      "transcript": [],
+      "pressureScore": 48,
+      "interviewer": {
+        "name": "Ananya Rao",
+        "title": "Senior Interviewer",
+        "style": "Calm, deliberate, and detail-oriented.",
+        "pressureMultiplier": 1,
+        "intro": "Welcome. I will evaluate clarity, structure, and evidence. Take a breath, and answer with specifics."
+      },
+      "endedAt": "2026-04-09T05:02:25.331Z",
+      "summary": {}
+    },
+    {
+      "id": "QeBcrZpG6i",
+      "createdAt": "2026-04-08T18:30:08.777Z",
+      "role": "software-engineer",
+      "candidateName": "Candidate",
+      "interviewMode": "behavioral + technical",
+      "difficulty": "easy",
+      "persona": "calm-senior-interviewer",
+      "pressureMode": "balanced",
+      "resumeText": "",
+      "jdText": "",
+      "askedQuestionIds": [
+        "SWE001",
+        "SWE002"
+      ],
+      "currentQuestion": {
+        "id": "SWE002",
+        "role": "software-engineer",
+        "category": "Software Engineer",
+        "difficulty": "medium",
+        "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+        "keywords": [
+          "technical depth",
+          "ownership",
+          "communication"
+        ],
+        "ideal_answer_framework": "Tradeoff Name + Why That Direction + What Was Given Up + Mitigation Plan",
+        "expectedPoints": [
+          "Too vague",
+          "No category of tradeoff named",
+          "Missing justification"
+        ],
+        "strong_answer": "We needed a reporting feature by end-of-sprint. I chose a synchronous approach instead of async queuing — sacrificing long-term scalability for delivery speed. I created a follow-up ticket to migrate to an async queue post-launch and communicated the tradeoff to the team so everyone understood the technical debt we were taking on."
+      },
+      "transcript": [
+        {
+          "question": "Tell me about a time you had to make a difficult architectural decision under pressure.",
+          "questionMeta": {
+            "id": "SWE001",
+            "role": "software-engineer",
+            "category": "Software Engineer",
+            "difficulty": "hard",
+            "question": "Tell me about a time you had to make a difficult architectural decision under pressure.",
+            "keywords": [
+              "technical judgment",
+              "pressure handling",
+              "communication"
+            ],
+            "ideal_answer_framework": "Context + Options Considered + Decision Criteria + Outcome + Lesson",
+            "expectedPoints": [
+              "Generic choice",
+              "No pressure context",
+              "Missing tradeoff reasoning"
+            ],
+            "strong_answer": "During a product launch with a hard deadline, we discovered our existing monolith couldn't handle projected load. I had to decide quickly between a partial extraction vs. a caching layer. I mapped the highest-traffic endpoints, ran load tests, and chose to introduce Redis caching first — which gave us 4x throughput without a risky refactor. I documented the tradeoff clearly for the team."
+          },
+          "answer": "dfsfsfsd ",
+          "createdAt": "2026-04-08T18:30:28.988Z",
+          "analysis": {
+            "responseSeconds": 20
+          },
+          "responseSeconds": 20,
+          "pressureScoreBefore": 48
+        }
+      ],
+      "pressureScore": 56,
+      "interviewer": {
+        "name": "Ananya Rao",
+        "title": "Senior Interviewer",
+        "style": "Calm, deliberate, and detail-oriented.",
+        "pressureMultiplier": 1,
+        "intro": "Welcome. I will evaluate clarity, structure, and evidence. Take a breath, and answer with specifics."
+      },
+      "endedAt": "2026-04-08T18:30:30.198Z",
+      "summary": {}
+    },
+    {
+      "id": "rvNbk2NeNB",
+      "createdAt": "2026-04-08T18:29:25.322Z",
+      "role": "software-engineer",
+      "candidateName": "Candidate",
+      "interviewMode": "behavioral + technical",
+      "difficulty": "easy",
+      "persona": "calm-senior-interviewer",
+      "pressureMode": "balanced",
+      "resumeText": "",
+      "jdText": "",
+      "askedQuestionIds": [
+        "SWE001",
+        "SWE002",
+        "SWE003"
+      ],
+      "currentQuestion": {
+        "id": "SWE003",
+        "role": "software-engineer",
+        "category": "Software Engineer",
+        "difficulty": "hard",
+        "question": "Walk me through a time when a critical system failed in production. How did you diagnose and resolve it?",
+        "keywords": [
+          "debugging",
+          "calmness under pressure",
+          "accountability"
+        ],
+        "ideal_answer_framework": "Detection → Diagnosis → Fix → Prevention → Communication",
+        "expectedPoints": [
+          "No diagnosis process shown",
+          "No measurable impact",
+          "No prevention step"
+        ],
+        "strong_answer": "Our payment processing degraded silently during peak traffic. I noticed via alert that success rates dropped 12%. I pulled logs, identified repeated DB timeout errors on a specific query, traced it to a missing index introduced in a recent migration, added the index via a hot-patch, and authored a post-mortem with a checklist to catch similar issues in CI. Downtime was under 8 minutes."
+      },
+      "transcript": [
+        {
+          "question": "Tell me about a time you had to make a difficult architectural decision under pressure.",
+          "questionMeta": {
+            "id": "SWE001",
+            "role": "software-engineer",
+            "category": "Software Engineer",
+            "difficulty": "hard",
+            "question": "Tell me about a time you had to make a difficult architectural decision under pressure.",
+            "keywords": [
+              "technical judgment",
+              "pressure handling",
+              "communication"
+            ],
+            "ideal_answer_framework": "Context + Options Considered + Decision Criteria + Outcome + Lesson",
+            "expectedPoints": [
+              "Generic choice",
+              "No pressure context",
+              "Missing tradeoff reasoning"
+            ],
+            "strong_answer": "During a product launch with a hard deadline, we discovered our existing monolith couldn't handle projected load. I had to decide quickly between a partial extraction vs. a caching layer. I mapped the highest-traffic endpoints, ran load tests, and chose to introduce Redis caching first — which gave us 4x throughput without a risky refactor. I documented the tradeoff clearly for the team."
+          },
+          "answer": "UhUh itUh it wasUh it was theUh it was the timeUh it was the timeUh it was the time whenUh it was the time whenUh it was the time whenUh it was the time when IUh it was the time when IUh it was the time when I wasUh it was the time when I wasUh it was the time when I was workingUh it was the time when I was workingUh it was the time when I was workingUh it was the time when I was working atUh it was the time when I was working at theUh it was the time when I was working at theUh it was the time when I was working at",
+          "createdAt": "2026-04-08T18:29:45.550Z",
+          "analysis": {
+            "responseSeconds": 20
+          },
+          "responseSeconds": 20,
+          "pressureScoreBefore": 48
+        },
+        {
+          "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+          "questionMeta": {
+            "id": "SWE002",
+            "role": "software-engineer",
+            "category": "Software Engineer",
+            "difficulty": "medium",
+            "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+            "keywords": [
+              "technical depth",
+              "ownership",
+              "communication"
+            ],
+            "ideal_answer_framework": "Tradeoff Name + Why That Direction + What Was Given Up + Mitigation Plan",
+            "expectedPoints": [
+              "Too vague",
+              "No category of tradeoff named",
+              "Missing justification"
+            ],
+            "strong_answer": "We needed a reporting feature by end-of-sprint. I chose a synchronous approach instead of async queuing — sacrificing long-term scalability for delivery speed. I created a follow-up ticket to migrate to an async queue post-launch and communicated the tradeoff to the team so everyone understood the technical debt we were taking on."
+          },
+          "answer": "UhUh itUh it wasUh it was theUh it was the timeUh it was the timeUh it was the time whenUh it was the time whenUh it was the time whenUh it was the time when IUh it was the time when IUh it was the time when I wasUh it was the time when I wasUh it was the time when I was workingUh it was the time when I was workingUh it was the time when I was workingUh it was the time when I was working atUh it was the time when I was working at theUh it was the time when I was working at theUh it was the time when I was working at",
+          "createdAt": "2026-04-08T18:29:53.428Z",
+          "analysis": {
+            "responseSeconds": 28
+          },
+          "responseSeconds": 28,
+          "pressureScoreBefore": 56
+        }
+      ],
+      "pressureScore": 64,
+      "interviewer": {
+        "name": "Ananya Rao",
+        "title": "Senior Interviewer",
+        "style": "Calm, deliberate, and detail-oriented.",
+        "pressureMultiplier": 1,
+        "intro": "Welcome. I will evaluate clarity, structure, and evidence. Take a breath, and answer with specifics."
+      },
+      "endedAt": "2026-04-08T18:29:55.061Z",
+      "summary": {}
+    },
+    {
+      "id": "dh16DMFy_P",
+      "createdAt": "2026-04-08T18:24:03.290Z",
+      "role": "software-engineer",
+      "candidateName": "Candidate",
+      "interviewMode": "behavioral + technical",
+      "difficulty": "medium",
+      "persona": "calm-senior-interviewer",
+      "pressureMode": "balanced",
+      "resumeText": "",
+      "jdText": "",
+      "askedQuestionIds": [
+        "SWE002"
+      ],
+      "currentQuestion": {
+        "id": "SWE002",
+        "role": "software-engineer",
+        "category": "Software Engineer",
+        "difficulty": "medium",
+        "question": "Describe a technical tradeoff you made recently. What did you sacrifice and why?",
+        "keywords": [
+          "technical depth",
+          "ownership",
+          "communication"
+        ],
+        "ideal_answer_framework": "Tradeoff Name + Why That Direction + What Was Given Up + Mitigation Plan",
+        "expectedPoints": [
+          "Too vague",
+          "No category of tradeoff named",
+          "Missing justification"
+        ],
+        "strong_answer": "We needed a reporting feature by end-of-sprint. I chose a synchronous approach instead of async queuing — sacrificing long-term scalability for delivery speed. I created a follow-up ticket to migrate to an async queue post-launch and communicated the tradeoff to the team so everyone understood the technical debt we were taking on."
+      },
+      "transcript": [],
+      "pressureScore": 48,
+      "interviewer": {
+        "name": "Ananya Rao",
+        "title": "Senior Interviewer",
+        "style": "Calm, deliberate, and detail-oriented.",
+        "pressureMultiplier": 1,
+        "intro": "Welcome. I will evaluate clarity, structure, and evidence. Take a breath, and answer with specifics."
+      },
+      "endedAt": null,
+      "summary": null
+    }
+  ]
+}

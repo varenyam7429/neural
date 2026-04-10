@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Flag, Trophy, Target, AlertTriangle, Crosshair, Star, AlertCircle, FileText, Copy, Check } from "lucide-react";
 
@@ -52,6 +52,14 @@ Focus Area: ${summary.recommendedFocus}
 
   const confettiColors = ['bg-emerald-400', 'bg-cyan-400', 'bg-violet-400', 'bg-yellow-400'];
 
+  const confettiItems = useMemo(() => {
+    return Array.from({ length: 40 }).map(() => ({
+      delay: Math.random() * 1.5,
+      left: Math.random() * 100,
+      color: confettiColors[Math.floor(Math.random() * confettiColors.length)]
+    }));
+  }, []);
+
   return (
     <motion.section
       initial={{ opacity: 0, scale: 0.95 }}
@@ -66,13 +74,8 @@ Focus Area: ${summary.recommendedFocus}
         }
       `}</style>
       
-      {showConfetti && Array.from({ length: 40 }).map((_, i) => (
-         <ConfettiItem 
-            key={i} 
-            delay={Math.random() * 1.5} 
-            left={Math.random() * 100} 
-            color={confettiColors[Math.floor(Math.random() * confettiColors.length)]} 
-         />
+      {showConfetti && confettiItems.map((props, i) => (
+         <ConfettiItem key={i} {...props} />
       ))}
 
       {/* Header Banner */}

@@ -1,7 +1,7 @@
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "http://localhost:5000/api/interview";
 
 export const startSessionBackend = async (payload) => {
-  const res = await fetch(`${API_BASE}/start-session`, {
+  const res = await fetch(`${API_BASE}/start`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload),
@@ -10,7 +10,7 @@ export const startSessionBackend = async (payload) => {
 };
 
 export const submitAnswerBackend = async (payload) => {
-  const res = await fetch(`${API_BASE}/submit-answer`, {
+  const res = await fetch(`${API_BASE}/answer`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload),
@@ -19,7 +19,7 @@ export const submitAnswerBackend = async (payload) => {
 };
 
 export const endSessionBackend = async (payload) => {
-  const res = await fetch(`${API_BASE}/end-session`, {
+  const res = await fetch(`${API_BASE}/end`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload),
